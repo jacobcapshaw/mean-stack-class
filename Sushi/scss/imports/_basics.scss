@@ -1,0 +1,193 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  color: $dark-gray;
+  background-color: #c2c2c2;
+  font-size: 100%;
+  font-family: "lato", arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 57em;
+  margin: 1em auto;
+  position: relative;
+  background-color: white;
+  border: solid $blue-4;
+  border-radius: 11px 11px 11px 11px;
+  box-shadow: 3px 3px 6px gray;
+}
+
+header {
+  background-color: $blue-4;
+  border-radius: 7px 7px 0 0;
+
+  h1 {
+    /*font-family: Modak;*/
+    color: $gold-3;
+    /*font-weight: 900;*/
+    padding: 1rem 1.5rem 0 1.5rem;
+    font-weight: 900;
+    font-size: 4em;
+    font-style: black;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px $dark-gray;
+
+  }
+
+  h2 {
+    color: $white;
+    padding: 0 1.5rem .5rem 1.5rem;
+    font-weight: 100;
+  }
+}
+
+nav {
+  padding-top: 1em;
+  background-color: $blue-4;
+
+  ul {
+    list-style: none;
+    padding: 0 0 0 1.5rem;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1em;
+    border-collapse: separate;
+    font-weight: 900;
+  }
+
+  a.button{
+    color: $dark-gray;
+    text-decoration: none;
+    width: 9rem;
+    text-align: center;
+    padding: .5em;
+    display: block;
+    background-color: $tan;
+    border-radius: 7px 7px 0 0;
+
+  }
+
+  a:hover {
+    color: $white;
+    background-color: $gold-3;
+    /*box-shadow: 0 3px 6px #9194a2;*/
+    /*transition: box-shadow 0.3s ease-in;*/
+  }
+
+}
+
+.info {
+  position: absolute;
+  width: 100%;
+  background-color: $blue-1;
+  color: white;
+  padding: .5em;
+  margin-top: 2.4em;
+  border-radius: 0 7px 7px 0;
+  box-shadow: 5px 5px 5px grey;
+
+  th {
+    text-align: left;
+    font-weight: 900;
+  }
+
+  td {
+    font-weight: 300;
+  }
+
+  li {
+    font-weight: 300;
+  }
+
+  @media (min-width: 46.25em) {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    width: 10em;
+  }
+}
+
+article {
+  margin-left: 1em;
+  padding: 0 1rem 3em 0;
+
+  h2 {
+    font-size: 2em;
+    font-weight: 900;
+  }
+
+/*  .byline {
+    border: 3px dotted $orange-3;
+    border-right: 0;
+    border-left: 0;
+  }*/
+
+  @media (min-width: 46.25em) {
+    margin: 2em 0 0 12em;
+  }
+}
+
+blockquote {
+  width: 100%;
+  padding: 16px;
+  font-size: 1.5em;
+  border-top: 2px solid $orange-3;
+  border-bottom: 2px solid $orange-3;
+
+
+  @media (min-width: 46.25em) {
+    float: right;
+    width: 40%;
+  }
+}
+
+  p {
+    margin: 1em 0;
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  img {
+    float: left;
+    width: 240px;
+    /*padding-right: 8px;*/
+    margin: 0 1em 1em 0;
+    border-top: 2px solid $orange-3;
+    border-bottom: 2px solid $orange-3;
+  }
+
+  .p-cuisines .t-cuisines {
+    color: $dark-gray;
+    background: $white;
+}
+
+  .p-recipes .t-recipes {
+    color: $dark-gray;
+    background: $white;
+  }
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: $reddish;
+}
+
+footer {
+  height: 3rem;
+  background-color: $blue-4;
+  border-radius: 0 0 7px 7px;
+}
